@@ -1,0 +1,94 @@
+.testimoni
+{
+    margin-bottom: 100px;
+}
+.testimoni .carousel-inner
+{
+    width: 996px;
+    height: 411px;
+    border-radius: 8px;
+}
+
+
+.testimoni .carousel-inner .carousel-item .bg-tengah
+{
+    width: 996px;
+    height: 411px;
+    border-radius: 8px;
+    justify-content: space-evenly;
+}
+
+.testimoni .carousel-inner .carousel-item .bg-tengah .test h5
+{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    
+    color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    bottom: 60px;
+}
+.testimoni .carousel-inner .carousel-item .bg-tengah .test h3
+{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;  
+    color: rgba(0, 0, 0, 0.75);
+}
+.testimoni .carousel-inner .carousel-item .bg-tengah .test h4
+{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    
+    color: rgba(0, 0, 0, 0.5);
+}
+.testimoni .carousel-inner .carousel-item .bg-tengah .test
+{
+    width: 487px;
+    height: 269px;
+    position: relative;
+    bottom: 100px;
+}
+.testimoni .carousel-inner .carousel-item .bg-tengah .test .garis
+{
+    width: 660px;
+    height: 0.5px;
+    position: relative;
+    right: 94px;
+    bottom: 35px;
+    background-color: rgba(0, 0, 0, 0.5);;
+}
+
+.testimoni .kirikanan button i
+{
+    position: relative;
+    color: rgba(0, 0, 0, 0.5);;
+    
+}
+
+.testimoni .kirikanan .kiri i
+{
+    position: absolute;
+    right: 200px;
+}
+
+.testimoni .kirikanan .kanan i
+{
+    position: absolute;
+    left: 200px;   
+}
+
+.testimoni .kirikanan button
+{
+    height: 0px;
+    position: absolute;
+    top: 210px;
+}
