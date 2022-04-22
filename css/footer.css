@@ -1,9 +1,51 @@
 .footer_area{
     background-color: #3EC0A1;
+    font-family: 'Roboto';
+    font-style: normal;
+    color: white;
+    padding: 86px 125px 52px;
 }
 
 .footer_area .footer_logo{
     width: 133px;
+    margin-bottom: 15px;
+}
+
+.footer_content p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+
+}
+
+.footer_content p a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+
+}
+
+.footer_content .footer_title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #FFFFFF;
+
+    margin-bottom: 10px;
+}
+
+.footer_content .kolom2 i{
+    font-size: 24px;
+    margin-right: 23px;
+}
+
+.footer_content .kolom3 .qlinks{
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-bottom: 7px;
 }
 
 .footer_content .row .kolom4 .subscribe_box{
@@ -18,8 +60,6 @@
     border: none;
     outline: none;
 
-    font-family: 'Poppins';
-    font-style: normal;
     font-size: 14px;
     line-height: 150%;
     letter-spacing: 0.005em;
@@ -29,15 +69,57 @@
 .footer_content .row .kolom4 .subscribe_box .btn_sub{
     border: none;
     border-radius: 32px;
-    background-color: #F2C229;;
+    background-color: rgba(255, 163, 0, 1);;
     width: 50%;
     padding: 10px 0;
     
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 150%;
     letter-spacing: 0.005em;
-    color: white;
+    color: #FFFFFF;
+}
+
+.footer_content .row.copy{
+    margin-top: 95px;
+    text-align: center;
+}
+
+@media only screen and (max-width:1025px) {
+    .footer_area{
+        padding: 86px 30px 52px;
+    }
+}
+
+@media only screen and (max-width:769px) {
+    .footer_area{
+        padding: 86px 65px 52px;
+    }
+
+    .footer_content .row.copy .copy_teks{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:426px){
+    .footer_area{
+        padding: 35px 32px;
+    }
+
+    .footer_area .footer_logo{
+        margin-bottom: 42px;
+    }
+
+    .footer_content .footer_title{
+        margin-bottom: 25px;
+    }
+
+    .footer_content .kol{
+        margin-bottom: 40px;
+    }
+
+    .footer_content .row.copy{
+        margin-top: 43px;
+    }
+
 }
