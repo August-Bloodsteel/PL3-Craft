@@ -1,0 +1,28 @@
+.gambar
+{
+    border-radius: 8px;
+}
+
+.help form input
+{
+    width: 488px;
+    height: 80px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.help input
+{
+    width: 488px;
+    height: 280px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    border-radius: 8px;
+
+}
+
+.help
+{
+    margin-bottom: 100px;
+}
