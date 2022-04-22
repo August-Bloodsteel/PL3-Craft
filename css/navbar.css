@@ -3,11 +3,19 @@ nav{
     padding: 22px 120px;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 nav .logo_nav{
     width: 133px;
+}
+
+nav .icon{
+    display: none;
+}
+
+.scrolled{
+    background-color: white;
 }
 
 .nav-links ul{
@@ -44,4 +52,61 @@ nav .logo_nav{
 
 .nav-links ul li a:hover{
     background: rgba(255, 163, 0, 0.25);
+}
+
+@media only screen and (max-width:1025px) {
+    nav{
+        padding: 22px 60px;
+    }
+}
+
+@media only screen and (max-width:769px){
+    nav .icon{
+        display: contents;
+    }
+
+    .nav-links ul li{
+        display: block;
+    }
+
+    .nav-links ul li .icon.close > img{
+        margin-bottom: 28px;
+    }
+
+    .nav-links ul li a{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 10px;
+        color: white;
+
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    .nav-links{
+        position: absolute;
+        background: #FFA300;
+        height: 100vh;
+        width: 259px;
+        top: 0;
+        right: -259px;
+        text-align: right;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    .nav-links ul{
+        padding: 35px;
+    }
+
+    .nav-links ul li a:hover{
+        background: none;
+    }
+
+    @media only screen and (max-width:426px){
+        nav{
+            padding: 16px 32px;
+        }
+    }
 }
