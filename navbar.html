@@ -1,8 +1,9 @@
-<nav class="" id="navbar">
+<!-- =========================== Start Navbar Area =========================== -->
+<nav class="navbar" id="navbar">
     <a href="#navbar"><img class ="logo_nav" src="./img/logo.svg" alt=""></a>
     <div class="nav-links" id="NavLinks">
         <ul>
-            <!-- <span class="icon close"  onclick="hideMenu()"><img src="./img/close.svg" alt=""></span> -->
+            <li><span class="icon close"  onclick="hideMenu()"><img src="./img/close.svg" alt=""></span></li>
             <li><a href="#navbar">Home</a></li>
             <li><a href="#menu_about">About Us</a></li>
             <li><a href="#produk">Product</a></li>
@@ -10,5 +11,17 @@
             <li><a href="#menu_help">Contact</a></li>
         </ul>
     </div>
-    <!-- <span class="icon bars"  onclick="showMenu()"><img src="./img/bars.svg" alt=""></span> -->
+    <span class="icon bars"  onclick="showMenu()"><img src="./img/bars.svg" alt=""></span>
 </nav>
+
+<script>
+    var navLinks = document.getElementById("NavLinks")
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-259px";
+    }
+</script>
+<!-- =========================== End Navbar Area =========================== -->
