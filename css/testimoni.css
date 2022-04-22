@@ -64,20 +64,31 @@
     position: relative;
     right: 94px;
     bottom: 35px;
-    background-color: rgba(0, 0, 0, 0.5);;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .testimoni .kirikanan button i
 {
     position: relative;
-    color: rgba(0, 0, 0, 0.5);;
+    color: rgba(0, 0, 0, 0.5);
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+    padding: 5px;
+    width: 23px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
+
 }
+
 
 .testimoni .kirikanan .kiri i
 {
     position: absolute;
     right: 200px;
+
 }
 
 .testimoni .kirikanan .kanan i

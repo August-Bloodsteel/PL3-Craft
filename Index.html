@@ -34,6 +34,11 @@
 
   <body>
     <!-- =========================== Start Include Content Area =========================== -->
+    <div id="preloader">
+      <div class="load">
+        <img src="img/loader.svg" alt="">
+      </div>
+    </div>
 
     <div id="navbar"></div>
     <div class="row">
@@ -59,6 +64,23 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+
+    <!-- preloader  -->
+
+    <!-- <script>
+      var loader = document.getElementById("preloader")
+      window.addEventListener("load", function()
+      {
+        loader.style.display = "none";
+      })
+    </script> -->
+
+    <script>
+      $(window).on("load", function()
+      {
+        $("#preloader").fadeOut(1000); 
+      })
     </script>
 
     <!-- Custom Script -->

@@ -1,3 +1,4 @@
+
 @import url(./navbar.css);
 
 @import url(./header.css);
@@ -12,6 +13,35 @@
 
 @import url(./footer.css);
 
+#preloader
+{
+    width: 100vw;
+    height: 100vh;
+    background: #FFA300;
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.load
+{
+    animation: fadein 6s;
+}
+
+@keyframes fadein{
+        from
+        {
+            opacity: 0;
+        }
+        to
+        {
+            opacity: 1;
+        }
+}
+
 html,body{
     margin: 0%;
     box-sizing: border-box;
@@ -21,3 +51,5 @@ html,body{
     overflow-x: hidden;
     
 }
+
+
