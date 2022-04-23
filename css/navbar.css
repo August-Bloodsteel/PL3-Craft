@@ -60,7 +60,7 @@ nav .icon{
     }
 }
 
-@media only screen and (max-width:769px){
+@media only screen and (max-width:900px){
     nav .icon{
         display: contents;
     }
@@ -103,10 +103,10 @@ nav .icon{
     .nav-links ul li a:hover{
         background: none;
     }
+}
 
-    @media only screen and (max-width:426px){
-        nav{
-            padding: 16px 32px;
-        }
+@media only screen and (max-width:426px){
+    nav{
+        padding: 16px 32px;
     }
 }
