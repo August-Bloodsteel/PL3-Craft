@@ -145,9 +145,6 @@
     border-bottom-right-radius: 8px; 
 }
 
-
-
-
 .card .best
 {
     position: absolute;
@@ -182,6 +179,11 @@
 
 @media only screen and (max-width: 1024px)
 {
+    .produk h1
+    {
+        font-size: 38px;
+        text-align: left;
+    }
     .card
     {
         margin-bottom: 100px;
@@ -230,7 +232,7 @@
     .card .card-body .order a
     {
         position: relative;
-        right: 30px;
+        right: 35px;
     }
 
     
