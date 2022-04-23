@@ -98,31 +98,52 @@
     transition: 0.5s;
     overflow: visible;    
 }
-.card .card-body .order:hover
+.card .card-body .order:hover span
 {
     background: #FFA300;
     border-radius: 12px;
     width: 172px;
     height: 48px;
     color: rgba(0, 0, 0, 0.75);
-    display: visible;     
+    overflow: visible;  
+    transition: 5s;   
 }
+
+.card .card-body .order:hover
+{
+    background: #FFA300;
+    border-radius: 12px;
+    width:172px ;
+    height: 48px;
+    color: rgba(0, 0, 0, 0.75);
+    overflow: visible;     
+}
+
 .card .card-body .order a
 {
     display: flex;
+
 }
-.card .card-body .order a h3
+
+
+.card .card-body .order span
 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
-    line-height: 23px;
-    position: relative;
-    top: 4px;
+    bottom: 0;
     left: 10px;
-    color: white;
-    
+    line-height: 48px;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    white-space: nowrap;
+    width: 0;
+	-moz-transition: 0.50s;
+    transition: 0.5s;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px; 
 }
 
 
