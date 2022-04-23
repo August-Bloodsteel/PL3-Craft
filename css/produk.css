@@ -102,7 +102,6 @@
 {
     background: #FFA300;
     border-radius: 12px;
-    width: 172px;
     height: 48px;
     color: rgba(0, 0, 0, 0.75);
     overflow: visible;  
@@ -113,7 +112,7 @@
 {
     background: #FFA300;
     border-radius: 12px;
-    width:172px ;
+    width:172px;
     height: 48px;
     color: rgba(0, 0, 0, 0.75);
     overflow: visible;     
@@ -186,5 +185,138 @@
     .card
     {
         margin-bottom: 100px;
+    }
+    .card .card-body .order
+    {
+        background: #FFC866;
+        border-radius: 12px;
+        width: 325px;
+        height: 48px;
+        justify-content: center;
+        align-items: center;
+        overflow: visible;    
+    }
+    .card .card-body .order:hover span
+    {
+        display: none;
+    }
+
+    .card .card-body .order:hover
+    {
+        display: none; 
+    }
+
+    .card .card-body .order span
+    {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        bottom: 0;
+        left: 5px;
+        overflow: visible;
+        position: relative;
+        -moz-transition: none;
+        transition: none;
+        border-top-right-radius: none;
+        border-bottom-right-radius: none; 
+    }
+
+    .card .card-body .order a img
+    {
+        width: 24px;
+    }
+
+    .card .card-body .order a
+    {
+        position: relative;
+        right: 30px;
+    }
+
+    
+
+}
+
+@media only screen and (max-width: 572px)
+{
+    .card
+    {
+        margin-bottom: 50px;
+        width: 18.5rem;
+        height: 29rem;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .card .kotak
+    {
+        width: 257px;
+        height: 251px;
+        background: #DAF3ED;
+    }
+
+
+
+    .card .card-body
+    {
+        position: absolute;
+        top: 300px;
+        width: 257px;
+        height: 251px;
+        padding: 0;
+    }
+
+    .card .card-body h5
+    {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        /* identical to box height, or 30px */
+
+        display: flex;
+        align-items: center;
+
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    .card .card-body h2
+    {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 150%;
+        /* identical to box height, or 48px */
+
+        color: rgba(0, 0, 0, 0.75);
+        position: relative;
+        top:-10px;
+    }
+    .card .best
+    {
+        width: 144px;
+        height: 46px;
+    }
+
+    .card .best h4
+    {
+        font-size: 18px;
+        position: relative;
+        top: 5px;
+        padding-left: 5px;
+    }
+
+    .card .best img
+    {
+        width: 23px;
+        height: 23px;
+    }
+
+    .card .card-body .order
+    {
+        width: 258px;
+        height: 48px;
+
     }
 }
