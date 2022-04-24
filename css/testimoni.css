@@ -1,21 +1,10 @@
-.testimoni
-{
-    margin-bottom: 100px;
-}
-.testimoni .carousel-inner
-{
-    width: 996px;
-    height: 411px;
-    border-radius: 8px;
-}
-
-
 .testimoni .carousel-inner .carousel-item .bg-tengah
 {
-    width: 996px;
     height: 411px;
     border-radius: 8px;
+    display: flex;
     justify-content: space-evenly;
+    z-index: 1;
 }
 
 .testimoni .carousel-inner .carousel-item .bg-tengah .test h5
@@ -29,7 +18,8 @@
     
     color: rgba(0, 0, 0, 0.5);
     position: relative;
-    bottom: 60px;
+    bottom: 75px;
+
 }
 .testimoni .carousel-inner .carousel-item .bg-tengah .test h3
 {
@@ -38,7 +28,10 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 150%;  
+    position: relative;
+    bottom: 25px;
     color: rgba(0, 0, 0, 0.75);
+
 }
 .testimoni .carousel-inner .carousel-item .bg-tengah .test h4
 {
@@ -47,59 +40,139 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    
+    position: relative;
+    bottom: 35px;
     color: rgba(0, 0, 0, 0.5);
+
 }
+
 .testimoni .carousel-inner .carousel-item .bg-tengah .test
 {
     width: 487px;
     height: 269px;
     position: relative;
-    bottom: 100px;
+    bottom: 0px;
+    z-index: 5;
 }
+
+.testimoni .carousel-inner .carousel-item .bg-tengah #orang1
+{
+    width: 293px; height: 348px; position: relative; top: 63px;
+}
+.testimoni .carousel-inner .carousel-item .bg-tengah #orang2
+{
+    width: 244px; height: 355px; position: relative; top: 60px;
+}
+.testimoni .carousel-inner .carousel-item .bg-tengah #orang3
+{
+    width: 319px; height: 349px; position: relative; top: 65px;
+}
+
 .testimoni .carousel-inner .carousel-item .bg-tengah .test .garis
 {
-    width: 660px;
+    width: 860px;
     height: 0.5px;
     position: relative;
-    right: 94px;
-    bottom: 35px;
-    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 45px;
+    background-color:  rgba(0, 0, 0, 0.5);
 }
 
-.testimoni .kirikanan button i
+.testimoni .carousel-inner
 {
-    position: relative;
-    color: rgba(0, 0, 0, 0.5);
-    border: 3px solid rgba(0, 0, 0, 0.5);
-    border-radius: 100px;
-    padding: 5px;
-    width: 23px;
-    height: 23px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-
+    width:996px; 
 }
 
-
-.testimoni .kirikanan .kiri i
+.testimoni .carousel-inner .carousel-item .bg-tengah .test .bintang
 {
-    position: absolute;
-    right: 200px;
-
+    width: 136px;
+    height: 240px;
 }
 
-.testimoni .kirikanan .kanan i
+/* responsive */
+@media only screen and (max-width: 1024px)
 {
-    position: absolute;
-    left: 200px;   
-}
+    .testimoni .carousel-inner
+    {
+        width:296px;
+    }
+    .testimoni .carousel-inner .carousel-item .bg-tengah
+    {
+        height: 502px;
+        flex-direction: column-reverse;
+    }
+    .testimoni .carousel-inner .carousel-item .bg-tengah .test .garis
+    {
+        display: none;
+    }
 
-.testimoni .kirikanan button
-{
-    height: 0px;
-    position: absolute;
-    top: 210px;
+    .testimoni .carousel-inner .carousel-item .bg-tengah .test 
+    {
+        width: 280px;
+        position: relative;
+        left: 5px;
+    }
+    .testimoni .carousel-inner .carousel-item .bg-tengah .test h5
+    {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        /* or 24px */
+        
+        color: rgba(0, 0, 0, 0.5);
+        position: relative;
+        top: 110px;
+        text-align: center;
+
+    }
+    .testimoni .carousel-inner .carousel-item .bg-tengah .test h3
+    {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 150%;  
+        position: relative;
+        bottom: 90px;
+        color: rgba(0, 0, 0, 0.75);
+        text-align: center;
+
+    }
+    .testimoni .carousel-inner .carousel-item .bg-tengah .test h4
+    {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        position: relative;
+        bottom: 100px;
+        color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+
+    }
+
+    .testimoni .carousel-inner .carousel-item .bg-tengah .test .bintang
+    {
+        width: 90px;
+        height: 16px;
+        position: relative;
+        top: 90px;
+        left: 100px;
+    }
+
+    .testimoni .carousel-inner .carousel-item .bg-tengah #orang1
+    {
+        width: 238px; height: 251px; position: relative; top: 0px; left: 40px;
+    }
+    .testimoni .carousel-inner .carousel-item .bg-tengah #orang2
+    {
+        width: 164px; height: 265px; position: relative; top: 0px; left: 67px;
+    }
+    .testimoni .carousel-inner .carousel-item .bg-tengah #orang3
+    {
+        width: 229px; height: 259px; position: relative; top: 0px; left: 40px;
+    }
+
 }
