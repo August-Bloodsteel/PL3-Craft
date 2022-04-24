@@ -32,20 +32,16 @@ header{
 .header_area .discount_box{
     position: absolute;
     top: 50%;
-    left: -110px;
+    left: -90px;
 
     border-radius: 24px 0px 24px 0px;
     width: 222px;
     overflow: hidden;
-}
-
-.header_area .discount_box p.discount_size{
-    margin: 0;
-    padding: 24px 0px 24px 16px;
+    z-index: 3;
 }
 
 .header_area .discount_left{
-    width: 50%;
+    width: 40%;
     background-color: #FFA300;
 
     font-family: 'Bebas Neue';
@@ -56,13 +52,8 @@ header{
     color: rgba(0, 0, 0, 0.75);
 }
 
-.header_area .discount_box .discount_left p.discount_size{
-    margin: 0;
-    padding: 24px 0px 24px 16px;
-}
-
 .header_area .discount_right{
-    width: 50%;
+    width: 60%;
     background-color: white;
 }
 
@@ -72,9 +63,8 @@ header{
     font-weight: 600;
     font-size: 24px;
     line-height: 100%;
+    width: fit-content;
     color: rgba(0, 0, 0, 0.75);
-    margin: 0;
-    padding: 24px 16px 24px 10px;
 }
 
 .header_area .discount_right .discount_text .t2{
@@ -94,6 +84,10 @@ header{
 }
 
 @media only screen and (max-width:900px){
+    header{
+        height: 100%;
+    }
+
     .header_area{
         display: flex;
         margin-top: 52px;
@@ -101,22 +95,67 @@ header{
     }
 
     .header_area .banner_wrap{
-        display: flex;
-        justify-content: center;
         height: 340px;
         margin: 0;
     }
 
     .header_area .banner_wrap .banner_img{
+        position: relative;
         overflow: hidden;
         border-radius: 24px;
+        width: 100%;
+        height: 100%;
+        margin-top: 39px;
     }
 
     .header_area .banner_wrap .banner_img img{
-        
+        position: absolute;
+        width: 135%;
+        height: min-content;
+        bottom: 0%;
+        left: 0%;        
     }
 
     .header_area .discount_box{
-        display: none;
+        top: -15%;
+        left: 60%;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .header_area .row {
+        flex-direction: column;
+    }
+
+    .header_area .title_left .title_text{
+        font-size: 35px;
+    }
+
+    .header_area .title_left .title_para{
+        font-size: 16px;
+    }
+
+    .header_area .banner_wrap .banner_img img{
+        width: 200%;
+        left: -30%;
+    }
+
+
+    .header_area .discount_left{
+        font-size: 32px;
+    }
+
+    .header_area .discount_right .discount_text{
+        font-size: 14px;
+    }
+
+    .header_area .discount_right .discount_text .t2{
+        font-size: 10px;
+    }
+
+    .header_area .discount_box{
+        top: -10%;
+        left: 45%;
+        width: 139px;
     }
 }
