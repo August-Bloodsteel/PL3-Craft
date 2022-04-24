@@ -1,3 +1,19 @@
+.testimoni h1
+{
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 115%;
+    /* or 74px */
+
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.75);
+    margin-bottom: 30px;
+}
+
+
 .testimoni .carousel-inner .carousel-item .bg-tengah
 {
     height: 411px;
@@ -88,9 +104,49 @@
     height: 240px;
 }
 
+/* buttom */
+
+
+.testimoni .carousel button#kiri
+{
+    position: absolute;
+    left: -165px;
+}
+
+.testimoni .carousel button#kiri .kiri2
+{
+   visibility: hidden;
+}
+.testimoni .carousel button#kanan
+{
+    position: absolute;
+    right: -165px;
+}
+
+.testimoni .carousel button#kanan .kanan2
+{
+   visibility: hidden;
+}
+
+.testimoni .carousel-indicators button
+{
+    visibility: hidden;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #4E4E4E;
+}
+
+/* end button */
+
 /* responsive */
 @media only screen and (max-width: 1024px)
 {
+    .testimoni h1
+    {
+        font-size: 36px;
+        margin-bottom: 0px;
+    }
     .testimoni .carousel-inner
     {
         width:296px;
@@ -174,5 +230,45 @@
     {
         width: 229px; height: 259px; position: relative; top: 0px; left: 40px;
     }
+
+
+    .testimoni .carousel button#kiri
+    {
+        position: absolute;
+        left: -50px;
+        visibility: hidden;
+    }
+
+    .testimoni .carousel button#kiri .kiri2
+    {
+        visibility: visible;
+    }
+    .testimoni .carousel button#kanan
+    {
+        position: absolute;
+        right: -25px;
+        visibility: hidden;
+    }
+
+    .testimoni .carousel button#kanan .kanan2
+    {
+        visibility: visible;
+
+    }
+
+    .testimoni .carousel-indicators
+    {
+        position: absolute;
+        top: 520px;
+    }
+    .testimoni .carousel-indicators button
+    {
+        visibility: visible;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        background-color: #4E4E4E;
+    }
+
 
 }
