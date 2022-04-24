@@ -72,6 +72,67 @@ header{
     color: rgba(0, 0, 0, 0.5)
 }
 
+.header_area .title_btn
+{
+    background: #FFC866;
+    border-radius: 12px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    overflow: visible;    
+}
+
+.header_area .row .btn_wrap{
+    display: none;
+}
+
+.header_area .title_btn:hover
+{
+    background: #FFA300;
+    border-radius: 12px;
+    width:220px;
+    height: 48px;
+    color: rgba(0, 0, 0, 0.75);
+    overflow: visible;     
+}
+
+.header_area .title_btn a
+{
+    display: flex;
+    padding-left: 20px;
+    transition: 0.3s;
+    
+}
+
+.header_area .title_btn:hover a{
+    padding-left: 35px;
+}
+
+.header_area .title_btn span
+{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    bottom: 0;
+    left: 10px;
+    line-height: 48px;
+    position: relative;
+    padding: 0 0 0 26px;
+    white-space: nowrap;
+    width: 0;
+	-moz-transition: 0.1s;
+    transition: 0.1s;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px; 
+}
+
+.header_area .title_btn:hover span{
+    font-weight: 600;
+}
+
 @media only screen and (max-width:1025px) {
 
     .header_area .title_left .title_text{
@@ -90,7 +151,7 @@ header{
 
     .header_area{
         display: flex;
-        margin-top: 52px;
+        margin-top: 70px;
         justify-content: space-around;
     }
 
@@ -120,6 +181,30 @@ header{
         top: -15%;
         left: 60%;
     }
+
+    .header_area .title_btn{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .header_area .title_btn a{
+        padding-left: 0;
+    }
+
+    .header_area .title_btn:hover a{
+        padding-left: 0;
+    }
+
+    .header_area .title_btn:hover{
+        background: #FFC866;
+
+    }
+
+    .header_area .title_btn span{
+        width: auto;
+        font-weight: 600;
+        padding: 0 0 0 10px;
+    }
 }
 
 @media only screen and (max-width:500px){
@@ -140,7 +225,6 @@ header{
         left: -30%;
     }
 
-
     .header_area .discount_left{
         font-size: 32px;
     }
@@ -152,6 +236,21 @@ header{
     .header_area .discount_right .discount_text .t2{
         font-size: 10px;
     }
+
+    
+    .header_area .title_btn.t1{
+        display: none;
+    }
+
+    .header_area .row .btn_wrap{
+        display: block;
+    }
+
+    .header_area .title_btn.t2{
+        justify-content: center;
+        width: 100%;
+    }
+
 
     .header_area .discount_box{
         top: -10%;
