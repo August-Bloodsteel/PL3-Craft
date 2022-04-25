@@ -44,6 +44,7 @@
     box-sizing: border-box;
     border-radius: 8px;
     margin: 20px 20px 20px 0px;
+    padding-left: 20px;
 
 }
 
@@ -53,7 +54,7 @@
     border: 1px solid rgba(0, 0, 0, 0.25);
 }
 
-.help .area input
+.help .area textarea
 {
     width: 488px;
     height: 278px;
@@ -62,6 +63,9 @@
     border-radius: 8px;
     box-shadow: none;
     outline: none;
+    color: black;
+    padding-top: 25px;
+    padding-left: 20px;
 
 }
 
@@ -70,11 +74,6 @@
     margin-bottom: 100px;
 }
 
-.help .tombol
-{
-    position: relative;
-    left: 50px;
-}
 
 .help .tombol .bt
 {
@@ -83,6 +82,8 @@
     width: 48px;
     height: 48px;
     margin-top: 10px;
+    position: relative;
+    right: 10px;
     transition: 0.5s;
 
 }
@@ -125,12 +126,29 @@
     font-size: 20px;
     position: relative;
     left: -10px;
+    top: 3px;
+
 
 
 }
 
 
 /* responsive */
+@media only screen and (max-width: 1280px  )
+{
+    .help .tombol .bt
+    {
+        background: #FFC866;
+        border-radius: 12px;
+        width: 48px;
+        height: 48px;
+        margin-top: 10px;
+        transition: 0.5s;
+        margin-left: 12px;
+        right: 0px;
+
+    }
+}
 @media only screen and (max-width: 1024px  )
 {
     .help h1
@@ -142,6 +160,8 @@
     {
         position: relative;
         left: 0px;
+        padding: 0px;
+        margin-left: 20px;
     }
 
     .help .tombol .bt
@@ -152,22 +172,18 @@
         height: 48px;
         margin-top: 10px;
         transition: 0.5s;
-    
-    }
-    @media(hover:none)
-    {
 
     
+    }
+
+
     .help .tombol .bt:hover 
     {
-        pointer-events: none;
-        display: none;
-        opacity: none;
-        touch-action: none;
-        -ms-touch-action: none;
+        width: 296px;
+        background: #FFC866;
     }
 
-  }
+
 
     
     .help .tombol  .bt a img#pojok 
@@ -192,13 +208,17 @@
     }
     .help .tombol  .bt a 
     {
+        position: relative;
+        bottom: 3px;
         margin-right: 0px;
+
     }
     .help .tombol  .bt a span
     {
         position: relative;
         left: 10px;
         font-size: 16px;
+        top: 8px;
     }
 
     .help form input
@@ -255,20 +275,17 @@
 
     }
 
-    .help .area input
+    .help .area textarea
     {
         width: 296px;
         height: 174px;
-        overflow: visible;
-        word-wrap: break-word;
-       
+        
     }
 
-    .help .area input::placeholder
+    .help .area textarea::placeholder
     {
-        overflow: visible;
         font-size: 14px;
-
+        width: 200px;
     }
 
 }

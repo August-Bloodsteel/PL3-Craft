@@ -205,12 +205,14 @@
     }
     .card .card-body .order:hover span
     {
-        display: none;
+        display: visible;
+
     }
 
     .card .card-body .order:hover
     {
-        display: none; 
+        width: 258px;
+        background: #FFC866;
     }
 
     .card .card-body .order span
