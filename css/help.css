@@ -32,15 +32,21 @@
 {
     box-shadow: none;
     outline: none;
+    border: none;
     border: 1px solid rgba(0, 0, 0, 0.25);
-    transition: 0.1s;
+
+    
+}
+.help .form .form-control:hover
+{
+    animation:  animate 1s linear  forwards;
+
 }
 
 .help form input
 {
     width: 488px;
     height: 80px;
-    border: 1px solid rgba(0, 0, 0, 0.25);
     box-sizing: border-box;
     border-radius: 8px;
     margin: 20px 20px 20px 0px;
@@ -48,10 +54,73 @@
 
 }
 
-.help .form .form-control:hover
+
+
+
+
+
+@keyframes animate
 {
-    outline: 3px solid orange ;
-    border: 1px solid rgba(0, 0, 0, 0.25);
+    0%
+    {
+        border-width: 2cm;
+      border-top: 1px solid;
+      border-top-color: rgba(255, 163, 0, 0.2);
+      border-right: 1px solid ;
+      border-right-color: rgba(0, 0, 0, 0.25);
+      border-bottom: 1px solid;
+      border-bottom-color:rgba(0, 0, 0, 0.25);
+      border-left: 1px solid ;
+      border-left-color:  rgba(0, 0, 0, 0.25);
+    }
+    50%
+    {
+        transition: 5s;
+        border-top: 1px solid;
+        border-top-color: rgba(255, 163, 0, 0.2);
+        border-right: 1px solid ;
+        border-right-color: rgba(255, 163, 0, 0.2);
+        border-bottom: 1px solid ;
+        border-bottom-color:rgba(0, 0, 0, 0.25);
+        border-left: 1px solid ;
+        border-left-color:  rgba(0, 0, 0, 0.25);
+    }
+    75%
+    {
+        transition: 5s;
+        border-top: 1px solid;
+        border-top-color: rgba(255, 163, 0, 0.5);
+        border-right: 1px solid ;
+        border-right-color: rgba(255, 163, 0, 0.5);
+        border-bottom: 1px solid ;
+        border-bottom-color:rgba(255, 163, 0, 0.5);
+        border-left: 1px solid ;
+        border-left-color:  rgba(0, 0, 0, 0.25);
+    }
+    90%
+    {
+        transition: 5s;
+        border-top: 1px solid;
+        border-top-color: rgba(255, 163, 0, 0.8);
+        border-right: 1px solid ;
+        border-right-color: rgba(255, 163, 0, 0.8);
+        border-bottom: 1px solid ;
+        border-bottom-color:rgba(255, 163, 0, 0.8);
+        border-left: 1px solid ;
+        border-left-color:  rgba(255, 163, 0, 0.8);
+    }
+    100%
+    {
+        transition: 5s;
+        border-top: 1px solid;
+        border-top-color: rgba(255, 163, 0, 1);
+        border-right: 1px solid ;
+        border-right-color: rgba(255, 163, 0, 1);
+        border-bottom: 1px solid ;
+        border-bottom-color:rgba(255, 163, 0, 1);
+        border-left: 1px solid ;
+        border-left-color:  rgba(255, 163, 0, 1);
+    }
 }
 
 .help .area textarea
@@ -92,6 +161,7 @@
     background:#FFA300;
     border-radius: 12px;
     width: 144px;
+    padding-left: 10px;
 
 }
 
@@ -134,6 +204,91 @@
 
 
 /* responsive */
+@media only screen and (max-width: 10000px  )
+{
+    .help .tombol .bt
+    {
+        margin-left: 145px;
+        right: 0px;
+
+    }
+}
+@media only screen and (max-width: 2000px  )
+{
+    .help .tombol .bt
+    {
+        background: #FFC866;
+        border-radius: 12px;
+        width: 48px;
+        height: 48px;
+        margin-top: 10px;
+        transition: 0.5s;
+        margin-left: 125px;
+        right: 10px;
+
+    }
+}
+@media only screen and (max-width: 1800px  )
+{
+    .help .tombol .bt
+    {
+        background: #FFC866;
+        border-radius: 12px;
+        width: 48px;
+        height: 48px;
+        margin-top: 10px;
+        transition: 0.5s;
+        margin-left: 50px;
+        right: 10px;
+
+    }
+}
+
+@media only screen and (max-width: 1600px  )
+{
+    .help .tombol .bt
+    {
+        background: #FFC866;
+        border-radius: 12px;
+        width: 48px;
+        height: 48px;
+        margin-top: 10px;
+        transition: 0.5s;
+        margin-left: 0px;
+        right: 10px;
+
+    }
+}
+@media only screen and (max-width: 1400px  )
+{
+    .help .tombol .bt
+    {
+        background: #FFC866;
+        border-radius: 12px;
+        width: 48px;
+        height: 48px;
+        margin-top: 10px;
+        transition: 0.5s;
+        margin-left: 50px;
+        right: 0px;
+
+    }
+}
+@media only screen and (max-width: 1300px  )
+{
+    .help .tombol .bt
+    {
+        background: #FFC866;
+        border-radius: 12px;
+        width: 48px;
+        height: 48px;
+        margin-top: 10px;
+        transition: 0.5s;
+        margin-left: 0px;
+        right: 10px;
+
+    }
+}
 @media only screen and (max-width: 1280px  )
 {
     .help .tombol .bt
@@ -144,7 +299,7 @@
         height: 48px;
         margin-top: 10px;
         transition: 0.5s;
-        margin-left: 12px;
+        margin-left: 10px;
         right: 0px;
 
     }
@@ -161,7 +316,7 @@
         position: relative;
         left: 0px;
         padding: 0px;
-        margin-left: 20px;
+        margin-left: 280px;
     }
 
     .help .tombol .bt
@@ -237,6 +392,13 @@
 }
 @media only screen and (max-width: 576px)
 {
+    .help .tombol
+    {
+        position: relative;
+        left: 0px;
+        padding: 0px;
+        margin-left: 20px;
+    }
     .gambar
     {
         border-radius: 8px;

@@ -120,7 +120,8 @@
     width:172px;
     height: 48px;
     color: rgba(0, 0, 0, 0.75);
-    overflow: visible;     
+    overflow: visible;
+    padding-left: 10px;     
 }
 
 .card .card-body .order a
@@ -179,6 +180,13 @@
 
     color: rgba(0, 0, 0, 0.75);
 }
+
+.card .card-body .order a.btn:focus
+{
+    outline: none;
+    box-shadow: none;
+}
+
 
 /* responsive */
 
