@@ -159,6 +159,10 @@ header{
         justify-content: space-around;
     }
 
+    .header_area .title_btn a.btn{
+        padding-left: 0;
+    }
+
     .header_area .banner_wrap{
         height: 340px;
         margin: 0;
@@ -202,6 +206,7 @@ header{
     .header_area .title_btn:hover{
         background: #FFC866;
         width: 100%;
+        padding: 0;
 
     }
 
@@ -254,6 +259,10 @@ header{
     .header_area .title_btn.t2{
         justify-content: center;
         width: 100%;
+    }
+
+    .header_area .title_btn.t2:hover{
+        padding-left: 0;
     }
 
 
