@@ -134,6 +134,91 @@
 
 
 /* responsive */
+@media only screen and (max-width: 10000px  )
+{
+    .help .tombol .bt
+    {
+        margin-left: 145px;
+        right: 0px;
+
+    }
+}
+@media only screen and (max-width: 2000px  )
+{
+    .help .tombol .bt
+    {
+        background: #FFC866;
+        border-radius: 12px;
+        width: 48px;
+        height: 48px;
+        margin-top: 10px;
+        transition: 0.5s;
+        margin-left: 125px;
+        right: 10px;
+
+    }
+}
+@media only screen and (max-width: 1800px  )
+{
+    .help .tombol .bt
+    {
+        background: #FFC866;
+        border-radius: 12px;
+        width: 48px;
+        height: 48px;
+        margin-top: 10px;
+        transition: 0.5s;
+        margin-left: 50px;
+        right: 10px;
+
+    }
+}
+
+@media only screen and (max-width: 1600px  )
+{
+    .help .tombol .bt
+    {
+        background: #FFC866;
+        border-radius: 12px;
+        width: 48px;
+        height: 48px;
+        margin-top: 10px;
+        transition: 0.5s;
+        margin-left: 0px;
+        right: 10px;
+
+    }
+}
+@media only screen and (max-width: 1400px  )
+{
+    .help .tombol .bt
+    {
+        background: #FFC866;
+        border-radius: 12px;
+        width: 48px;
+        height: 48px;
+        margin-top: 10px;
+        transition: 0.5s;
+        margin-left: 50px;
+        right: 0px;
+
+    }
+}
+@media only screen and (max-width: 1300px  )
+{
+    .help .tombol .bt
+    {
+        background: #FFC866;
+        border-radius: 12px;
+        width: 48px;
+        height: 48px;
+        margin-top: 10px;
+        transition: 0.5s;
+        margin-left: 0px;
+        right: 10px;
+
+    }
+}
 @media only screen and (max-width: 1280px  )
 {
     .help .tombol .bt
@@ -144,7 +229,7 @@
         height: 48px;
         margin-top: 10px;
         transition: 0.5s;
-        margin-left: 12px;
+        margin-left: 10px;
         right: 0px;
 
     }
@@ -161,7 +246,7 @@
         position: relative;
         left: 0px;
         padding: 0px;
-        margin-left: 20px;
+        margin-left: 280px;
     }
 
     .help .tombol .bt
@@ -237,6 +322,13 @@
 }
 @media only screen and (max-width: 576px)
 {
+    .help .tombol
+    {
+        position: relative;
+        left: 0px;
+        padding: 0px;
+        margin-left: 20px;
+    }
     .gambar
     {
         border-radius: 8px;
