@@ -11,11 +11,13 @@
     padding: 0;
 }
 
+.about .about_holder.ah2{
+    flex-direction: row-reverse;
+}
+
 .about .img_wrap{
     display: flex;
     align-items: center;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
 }
 .about .img_wrap img{
     width: min-content;
@@ -27,7 +29,11 @@
 }
 
 .about .about_right{
-    width: 200px;
+    width: 260px;
+}
+
+.about text{
+    width: 100%;
 }
 
 .about .about_head{
@@ -46,22 +52,29 @@
     font-size: 16px;
     line-height: 150%;
     color: rgba(0, 0, 0, 0.5);
+    width: 100%;
 }
 
-@media only screen and (max-width:1025px) {}
+@media only screen and (max-width:1025px) {
+    
+    .about .about_holder{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about .about_holder.ah2{
+        flex-direction: column;
+    }
+}
 
 @media only screen and (max-width:900px) {
 
-    .about  .about_title{
+    .about .about_title{
         padding-top: 3rem;
         display: flex;
         justify-content: center;
         font-size: 36px;
-    }
-
-    .about .about_holder{
-        flex-direction: column;
-        align-items: center;
     }
 }
 
