@@ -1,16 +1,41 @@
 nav{
+    transition: 0.5s;
+}
+
+.navbar{
     display: flex;
     padding: 22px 120px;
     justify-content: space-between;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.5);
+    transition: 00.5s;
 }
 
-nav .logo_nav{
+.navbar.scrolled{
+    background-color: #FFA300;
+}
+
+.navbar .logo_nav{
     width: 133px;
 }
 
-nav .icon{
+.navbar .ln1{
+    display: block;
+}
+
+.navbar .ln1.on{
+    display: none;
+}
+
+.navbar .ln2{
+    display: block;
+}
+
+.navbar .ln2.on{
+    display: none;
+}    
+
+.navbar .icon{
     display: none;
 }
 

@@ -1,6 +1,6 @@
 <!-- =========================== Start Navbar Area =========================== -->
 <nav class="fixed-top navbar" id="navbarbleb">
-    <a href="#navbar"><img class ="logo_nav" src="./img/logo.svg" alt=""></a>
+    <a href="#navbar"><img class ="logo_nav ln1" id="ln1" src="./img/logo.svg" alt=""><img class ="logo_nav ln2 on" id="ln2" src="./img/logo_white.svg" alt=""></a>
     <div class="nav-links" id="NavLinks">
         <ul>
             <li><span class="icon close"  onclick="hideMenu()"><img src="./img/close.svg" alt=""></span></li>
@@ -15,6 +15,45 @@
 </nav>
 
 <script>
+
+      var nav = document.getElementById("navbarbleb");
+      var head = document.getElementById("header");
+      var ln1 = document.getElementById("ln1");
+      var ln2 = document.getElementById("ln2");
+
+          document.body.addEventListener('scroll',() => {
+              
+              if (document.body.scrollTop > head.offsetTop){
+
+                  console.log('LOL');
+                  document.getElementById('navbarbleb').className="fixed-top navbar scrolled";
+                  document.getElementById('ln1').className="logo_nav ln1 on";
+                  document.getElementById('ln2').className="logo_nav ln2";
+                  
+              } else{
+                  
+                  console.log('WALOLING');
+                  document.getElementById('navbarbleb').className="fixed-top navbar";
+                  document.getElementById('ln1').className="logo_nav ln1";
+                  document.getElementById('ln2').className="logo_nav ln2 on";
+              }
+          })      
+
+
+    // console.log(document.getElementById("footer").scrollHeight);
+    // window.onscroll = bleb()
+    // document.body.addEventListener('scroll', () => {
+    //     if (document.body.scrollTop > fot.offsetTop) {
+    //         document.getElementById("navbarbleb").className = "hidden";
+    //         document.getElementById("wa_btn").className = "hidden";
+
+    //     }
+    //     else {
+    //         document.getElementById("navbarbleb").className = "fixed-top";
+    //         document.getElementById("wa_btn").className = "wa_btn";
+    //     }
+    // })
+
     var navLinks = document.getElementById("NavLinks")
 
     function showMenu() {
