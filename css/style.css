@@ -17,7 +17,7 @@
     width: 100vw;
     height: 100vh;
     background: #FFA300;
-    z-index: 100;
+    z-index: 10000;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -51,4 +51,21 @@ html,body{
     
 }
 
+/* responsive */
+
+@media only screen and (max-width: 576px)
+{
+    #preloader
+    {
+        width: 360px;
+        height: 800px;
+
+    }
+    #preloader .load img
+    {
+        width: 206.89px;
+        height: 56px;
+        margin-bottom: 140px;
+    }
+}
 
