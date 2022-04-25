@@ -1,6 +1,37 @@
 .gambar
 {
     border-radius: 8px;
+    height: 169px;
+    overflow: hidden;
+}
+
+.gambar img
+{
+    height: 169px;
+}
+
+.help h1
+{
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 115%;
+    /* identical to box height, or 74px */
+    margin-bottom: 40px;
+    text-align: center;
+    
+    color: rgba(0, 0, 0, 0.75);
+}
+.help .form
+{
+    margin-top: 50px;
+}
+
+.help .form .form-control
+{
+    box-shadow: none;
+    outline: none;
 }
 
 .help form input
@@ -10,15 +41,19 @@
     border: 1px solid rgba(0, 0, 0, 0.25);
     box-sizing: border-box;
     border-radius: 8px;
+    margin: 20px 20px 20px 0px;
+
 }
 
-.help input
+.help .area input
 {
     width: 488px;
-    height: 280px;
+    height: 278px;
     border: 1px solid rgba(0, 0, 0, 0.25);
     box-sizing: border-box;
     border-radius: 8px;
+    box-shadow: none;
+    outline: none;
 
 }
 
@@ -26,3 +61,195 @@
 {
     margin-bottom: 100px;
 }
+
+.help .tombol .bt
+{
+    background: #FFC866;
+    border-radius: 12px;
+    width: 48px;
+    height: 48px;
+    margin-top: 10px;
+    transition: 0.5s;
+
+}
+.help .tombol .bt:hover 
+{
+    background:#FFA300;
+    border-radius: 12px;
+    width: 144px;
+
+}
+
+
+.help .tombol  .bt:hover a img#pojok 
+{
+    transform: rotate(45deg);
+}
+
+.help .tombol  .bt a img#submit 
+{
+   visibility: hidden;
+}
+
+
+.help .tombol a img
+{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    position: relative;
+    top: 5px;
+    left: 1px;
+    transition: 0.5s;
+}
+
+.help .tombol a span
+{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    left: -10px;
+
+
+}
+
+
+/* responsive */
+@media only screen and (max-width: 1024px  )
+{
+    .help h1
+    {
+        font-size: 36px;
+    }
+
+    .help .tombol .bt
+    {
+        background: #FFC866;
+        border-radius: 12px;
+        width: 296px;
+        height: 48px;
+        margin-top: 10px;
+        transition: 0.5s;
+    
+    }
+    @media(hover:none)
+    {
+
+    
+    .help .tombol .bt:hover 
+    {
+        pointer-events: none;
+        display: none;
+        opacity: none;
+        touch-action: none;
+        -ms-touch-action: none;
+    }
+
+  }
+
+    
+    .help .tombol  .bt a img#pojok 
+    {
+       display: none;
+    }
+    .help .tombol  .bt:hover a img#pojok 
+    {
+       display: none;
+       pointer-events: none;
+       opacity: 0;
+       touch-action: none;
+    }
+
+    .help .tombol  .bt a img#submit 
+    {
+       visibility: visible;
+       width: 5px;
+       height: 9px;
+       position: relative;
+       top: 8px;
+    }
+    .help .tombol  .bt a 
+    {
+        margin-right: 0px;
+    }
+    .help .tombol  .bt a span
+    {
+        position: relative;
+        left: 10px;
+        font-size: 16px;
+    }
+
+    .help form input
+    {
+        margin: 20px 0px 20px 0px;
+
+    }
+
+    .help .tombol
+    {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+}
+@media only screen and (max-width: 576px)
+{
+    .gambar
+    {
+        border-radius: 8px;
+        overflow: hidden;
+        border-radius: 8px;
+        height: 88px;
+    }
+
+    .gambar img
+    {
+        position: relative;
+        height: 88px;
+
+    }
+
+    .help .form
+    {
+        margin-top: 50px;
+    }
+
+    .help .form .form-control
+    {
+        box-shadow: none;
+        outline: none;
+    }
+
+    .help form input
+    {
+        width: 296px;
+        height: 64px;
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        box-sizing: border-box;
+        border-radius: 8px;
+        margin: 20px 0px 20px 0px;
+        font-size: 14px;
+
+    }
+
+    .help .area input
+    {
+        width: 296px;
+        height: 174px;
+        overflow: visible;
+        word-wrap: break-word;
+       
+    }
+
+    .help .area input::placeholder
+    {
+        overflow: visible;
+        font-size: 14px;
+
+    }
+
+}
+
