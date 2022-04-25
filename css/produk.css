@@ -221,6 +221,7 @@
     {
         width: 258px;
         background: #FFC866;
+        padding-left: 0px;
     }
 
     .card .card-body .order span
