@@ -32,6 +32,8 @@
 {
     box-shadow: none;
     outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    transition: 0.1s;
 }
 
 .help form input
@@ -43,6 +45,12 @@
     border-radius: 8px;
     margin: 20px 20px 20px 0px;
 
+}
+
+.help .form .form-control:hover
+{
+    outline: 3px solid orange ;
+    border: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .help .area input
@@ -60,6 +68,12 @@
 .help
 {
     margin-bottom: 100px;
+}
+
+.help .tombol
+{
+    position: relative;
+    left: 50px;
 }
 
 .help .tombol .bt
@@ -122,6 +136,12 @@
     .help h1
     {
         font-size: 36px;
+    }
+
+    .help .tombol
+    {
+        position: relative;
+        left: 0px;
     }
 
     .help .tombol .bt
