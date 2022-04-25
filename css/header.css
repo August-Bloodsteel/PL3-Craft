@@ -98,12 +98,15 @@ header{
     overflow: visible;     
 }
 
-.header_area .title_btn a
+.header_area .title_btn a.btn
 {
     display: flex;
     padding-left: 20px;
-    transition: 0.3s;
-    
+    transition: 0.3s;    
+}
+
+.header_area .title_btn a.btn:focus{
+    box-shadow: none;
 }
 
 .header_area .title_btn:hover a{
@@ -126,7 +129,8 @@ header{
 	-moz-transition: 0.1s;
     transition: 0.1s;
     border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px; 
+    border-bottom-right-radius: 8px;
+    outline: 0px;
 }
 
 .header_area .title_btn:hover span{
