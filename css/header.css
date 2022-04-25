@@ -201,6 +201,7 @@ header{
 
     .header_area .title_btn:hover{
         background: #FFC866;
+        width: 100%;
 
     }
 
