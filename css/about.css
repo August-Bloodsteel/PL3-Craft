@@ -179,7 +179,7 @@
         margin-left: 10px;
         width: 200px;
         right: 0px;
-        left: 0px;
+        left: 225px;
     }
 
     .about .about_para
@@ -191,5 +191,7 @@
 @media only screen and (max-width:500px) {
     .about  .about_title{
         padding-top: 0rem;
+        right: 0px;
+        left: 0px;
     }
 }
