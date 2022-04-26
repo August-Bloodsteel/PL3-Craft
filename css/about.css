@@ -5,10 +5,13 @@
     font-size: 64px;
     line-height: 115%;
     color: rgba(0, 0, 0, 0.75);
+    position: relative;
+    right: 30px;
 }
 
 .about .about_holder{
     padding: 0;
+
 }
 
 .about .about_holder.ah2{
@@ -28,8 +31,45 @@
     margin-bottom: 8px;
 }
 
+.about .img_wrap img.com{
+
+}
+.about .img_wrap img.ele{
+    position: relative;
+    right: 70px;
+}
+.about .img_wrap img.hand{
+    position: relative;
+    left: 30px;
+    bottom: 70px;
+}
+.about .img_wrap img.eco{
+    position: relative;
+    bottom: 70px;
+    right: 40px;
+}
+
 .about .about_right{
-    width: 260px;
+    width: 285px;
+    height: 345px;
+    margin-left: 30px;
+    padding-right: 0px;
+}
+.about .about_right.eco{
+    position: relative;
+    right: 50px;
+    bottom: 50px;
+
+}
+.about .about_right.hand{
+    position: relative;
+    bottom: 50px;
+
+}
+.about .about_right.ele{
+    position: relative;
+    right: 65px;
+
 }
 
 .about text{
@@ -53,10 +93,10 @@
     line-height: 150%;
     color: rgba(0, 0, 0, 0.5);
     width: 100%;
+    width: 230px;
 }
 
 @media only screen and (max-width:1025px) {
-    
     .about .about_holder{
         flex-direction: column;
         align-items: center;
@@ -66,6 +106,53 @@
     .about .about_holder.ah2{
         flex-direction: column;
     }
+
+    .about .img_wrap img.ele{
+        position: relative;
+        right: 0px;
+
+    }
+    .about .img_wrap img.hand{
+        position: relative;
+        left: 0px;
+
+
+    }
+    .about .img_wrap img.eco{
+        position: relative;
+        padding-top: 10px;
+        right: 0px;
+
+    }
+    
+    .about .about_right{
+        margin-left: 0px;
+        padding-right: 2rem;
+
+        height: 200px;
+    }
+    .about .about_right.eco{
+        position: relative;
+        right: 0px;
+
+    }
+    .about .about_right.hand{
+        position: relative;
+
+    
+    }
+    .about .about_right.ele{
+        position: relative;
+        right: 0px;
+
+    
+    }
+    .about .about_right.com{
+        position: relative;
+        right: 0px;
+
+    
+    }
 }
 
 @media only screen and (max-width:900px) {
@@ -73,8 +160,16 @@
     .about .about_title{
         padding-top: 3rem;
         display: flex;
-        justify-content: center;
+        justify-content: start;
         font-size: 36px;
+        margin-left: 10px;
+        width: 200px;
+        right: 0px;
+    }
+
+    .about .about_para
+    {
+        width: 245px;
     }
 }
 
