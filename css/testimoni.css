@@ -10,7 +10,8 @@
     text-align: center;
 
     color: rgba(0, 0, 0, 0.75);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    margin-top: 110px;
 }
 
 
@@ -220,7 +221,7 @@
 
     .testimoni .carousel-inner .carousel-item .bg-tengah #orang1
     {
-        width: 238px; height: 251px; position: relative; top: 0px; left: 40px;
+        width: 196px; height: 251px; position: relative; top: 0px; left: 57px;
     }
     .testimoni .carousel-inner .carousel-item .bg-tengah #orang2
     {
@@ -228,7 +229,7 @@
     }
     .testimoni .carousel-inner .carousel-item .bg-tengah #orang3
     {
-        width: 229px; height: 259px; position: relative; top: 0px; left: 40px;
+        width: 229px; height: 259px; position: relative; top: 0px; left: 40px; 
     }
 
 

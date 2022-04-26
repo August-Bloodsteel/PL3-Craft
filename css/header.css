@@ -200,13 +200,14 @@ header{
     }
 
     .header_area .title_btn:hover a{
-        padding-left: 0;
+        padding-left: 8px;
+        padding-right: 0px;
     }
 
     .header_area .title_btn:hover{
         background: #FFC866;
         width: 100%;
-        padding: 0;
+        padding-right: 0px;
 
     }
 
