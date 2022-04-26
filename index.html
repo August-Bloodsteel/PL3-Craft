@@ -73,9 +73,11 @@
 
 
     <script>
-      $(window).on("load", function()
-      {
-        $("#preloader").fadeOut(1000) 
+      $(document).ready(function(){
+        $("#preloader").fadeIn(1000);
+        setTimeout(()=>{
+          $("#preloader").hide(); 
+        },2000);
       })
     </script>
 
