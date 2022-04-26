@@ -105,6 +105,12 @@
     {
         margin-left: 0px;
     }
+    .about .about_title
+    {
+        position: relative;
+        right: 0px;
+        left: 20px;
+    }
     .about .about_holder{
         flex-direction: column;
         align-items: center;
@@ -173,6 +179,7 @@
         margin-left: 10px;
         width: 200px;
         right: 0px;
+        left: 0px;
     }
 
     .about .about_para
