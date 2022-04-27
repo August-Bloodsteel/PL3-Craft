@@ -56,6 +56,7 @@
 .about .about_right{
     width: 285px;
     height: 345px;
+    margin-left: 30px;
     padding-right: 0px;
 }
 /* .about .about_right.eco{
@@ -178,7 +179,7 @@
         margin-left: 10px;
         width: 200px;
         right: 0px;
-        left: 225px;
+        left: 0px;
     }
 
     .about .about_para
@@ -190,7 +191,5 @@
 @media only screen and (max-width:500px) {
     .about  .about_title{
         padding-top: 0rem;
-        right: 0px;
-        left: 0px;
     }
 }
